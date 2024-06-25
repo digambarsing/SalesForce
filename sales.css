@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Optional: adjust base font size for mobile */
+    }
+    .container {
+        padding: 20px; /* Add some padding for smaller screens */
+    }
+    .container img {
+        border-width: 1px; /* Adjust border width for smaller screens */
+    }
+}
+
+@font-face {
+    font-family: 'Sansforce Sans';
+    src: url('path/to/sansforce-sans.woff2') format('woff2'), /* Example format */
+         url('path/to/sansforce-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+
+}
+
+#header{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+   
+
+}
+
+#logo{
+    height: 70%;
+    margin: 30px;
+}
+
+#contact{
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 20px;
+    color: rgb(0, 0, 93);
+  
+}
+
+
+#con{
+    text-decoration: underline;
+}
+
+#more{
+    display: flex;
+    align-items: center;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texts{
+    margin: 30px;
+    color: rgb(0, 0, 93);
+}
+
+
+.icons{
+    margin: 10px;
+    color: rgb(0, 0, 93);
+}
+
+#try{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    color: rgb(0, 0, 93);
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 93);
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+#login img{
+    
+    filter:contrast(0);
+    
+      
+}
+
+
+#fheader{
+    height: 10%;
+    width: 100%;
+    
+}
+
+
+#page1{
+    height: 90%;
+    width: 100%;
+    background-image: url(https://wp.salesforce.com/en-ap/wp-content/uploads/sites/14/2024/02/php-marquee-starter-lg-bg.jpg?resize=2048,640);
+    background-repeat: no-repeat;
+
+}
+
+#content{
+    display: flex;
+    width: 100%;
+    height:67% ;
+    /* background-color: gray; */
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+#box1{
+    height: 90%;
+    width: 47%;
+    /* background-color: lightcyan; */
+    margin: 10px;
+
+}
+
+#he1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    padding-left: 20px; /* Left padding */
+    text-align: left; 
+    color:rgb(0, 0, 93) ;
+
+}
+
+#he2{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    padding-left: 20px; /* Left padding */
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 100;
+    /* color: black; */
+    font-family: 'Sansforce Sans', 'Arial', sans-serif;}
+
+
+#box2{
+    width: 42%;
+    height: 80%;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+#strip{
+    width: 100%;
+    height: 12%;
+    /* background-color: aquamarine; */
+    text-align: center;
+    color: rgb(0, 0, 93);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;}
+
+
+#page2{
+    height: 90%;
+    width: 100%;
+     /* background-color: rgb(128, 68, 0); */
+}
+
+
+#write{
+    background-color: #043959;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9%;
+    font-size: larger;
+    font-weight: 600;
+    
+}
+
+#read{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+
+
+#try button {
+    padding: 15px 30px; 
+    font-size: 16px; 
+    
+    background-color: green; 
+    color: white; 
+    
+    font-weight: bold;
+    
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#try button:hover {
+    background-color: darkgreen;
+}
+
+
+
+
+
+#btns{
+    display: flex;
+    justify-content: left;
+   font-size: 10px;
+   font-weight: bold;
+    padding-left: 110px;
+    width: 100%;
+    
+}
+
+#bt1 {
+    padding: 10px 20px;
+    background-color: blue;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    color: white;
+    margin-right: 20px;
+}
+
+#bt1:hover {
+    background-color: darkblue;
+}
+
+
+#bt2{
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(51, 51, 243);
+   border-color: blue;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#frame{
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    overflow: hidden;   
+    border: none;
+    border-radius: 15px;
+}
+
+
+#cards{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.crd{
+    
+    margin-left: 30px;
+    /* background-color: yellow; */
+    height: 85% ;
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.t1{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 30px;
+    color: rgb(0, 0, 93);
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+}
+
+.t2{
+    display: flex;
+    justify-content: left;
+    height: 25%;
+    width: 100%;
+    padding: 30px;
+
+    /* text-align: center; */
+    color: rgb(0, 0, 93);
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+}
+
+.t3{
+    display: flex;
+    justify-content: left;
+    height: 20%;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: rgb(0, 0, 93);
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+    text-decoration: underline;
+}
+
+
+.t4{
+    height: 40%;
+    width: 100%;
+}
+
+#view{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+}
+
+#pbtn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    font-size: 15px;
+    padding: 25px;
+    font-weight: 200;
+}
+
+#pbtn:hover {
+    background-color: lightgrey;
+}
+
+.q1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#page3{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+#back{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    object-fit: cover;
+    /* background-color: black; */
+}
+
+#page3image{
+    height: 100%;
+    width: 100%;
+}
+
+#page3content{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+#page3heading{
+    color: rgb(0, 0, 93);
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+}
+
+
+#page3data{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+#page3datapara{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+
+}
+
+
+#page3buttons{
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+    /* background-color: aqua; */
+}
+
+#page3insidebuttons{
+    display: flex;
+    justify-content: center;
+   font-size: 10px;
+   font-weight: bold;
+    /* padding-left: 110px; */
+    width: 100%;
+}
+
+
+#page3btn1{
+    padding: 10px 20px;
+    background-color: blue;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    color: white;
+    margin-right: 20px;
+}
+
+#page3btn1:hover{
+    background-color: darkblue;
+}
+
+#page3btn2{
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(51, 51, 243);
+   border-color: blue;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#page3btn2:hover{
+    background-color: lightgray;
+}
+
+
+#page4{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#page4heading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+
+#page4headingdata{
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 93);
+}
+
+#page4data{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+
+#page4datacontent{
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+#page4diagram{
+    width: 100%;
+    height: 60%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page4diagramcard{
+    height: 95%;
+    width: 25%;
+    margin-left: 12px;
+    margin-right: 24px;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* background-color: green; */
+}
+
+
+.page4diagramcard1{
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.page4diagramcard1image{
+    padding-top: 15px;
+    height: 100%;
+    width: 40%;
+}
+
+
+.page4diagramcard2{
+    width: 100%;
+    height: 15%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.page4diagramcard2data{
+    margin: 15px;
+    text-align: center;
+    border-radius: 55px;
+    background-color: lightskyblue;
+    color: rgb(0, 0, 93);
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.page4diagramcard3{
+    width: 100%;
+    height: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.page4diagramcard3heading{
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+    color: rgb(0, 0, 93);
+    margin: 15px;
+
+}
+
+.page4diagramcard4{
+    width: 100%;
+    height: 20%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+.page4diagramcard4paragraph{
+    margin: 15px;
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+
+}
+
+.page4diagramcard5{
+    width: 100%;
+    height: 15%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.page4diagramcard5link{
+    margin: 15px;
+    color: rgb(0, 0, 93);
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+    text-decoration: underline;
+}
+
+
+
+#page5{
+    width: 100%;
+    height: 90%;
+    /* background-color: red; */
+}
+
+#page5div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    /* background-color: rebeccapurple; */
+}
+
+
+#page5div2{
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#page5divheading{
+    text-align: center;
+    color: rgb(0, 0, 93);
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+    font-size: 40px;
+}
+
+
+#page5div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 17%;
+    /* background-color: gray; */
+}
+
+
+.page5btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    font-size: 15px;
+    padding: 25px;
+    font-weight: 200;
+}
+
+.page5btns:hover{
+    background-color: lightskyblue;
+}
+
+
+
+#page6{
+    width: 100%;
+    height: 90%;
+   /* background-color: yellow; */
+   background-color: white;
+}
+
+
+#page6div1{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;
+     */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#page6div2{
+    width: 100%;
+    height: 20%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page6divcontainer{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    width: 14%;
+    height: 80%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+      position: relative;
+}
+
+.page6divcontainer img{
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 50%; */
+    height: 70%;
+    object-fit: cover;
+}
+
+#page6div3{
+    width: 100%;
+    height: 47%;
+    border-radius: 25%;
+    /* background-color: blue;
+     */
+     background-image: url("pb-hp-logos-bg-2.webp");
+     background-repeat: no-repeat;
+     overflow: hidden;
+     /* position: relative; */
+}
+
+
+#page7{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-image: url("stock-vector-abstract-white-and-gray-color-modern-design-stripes-background-with-geometric-round-shape-vector-2275076235.jpg");
+}
+
+
+#page7box1{
+    height: 90%;
+    width: 47%;
+    /* background-color: lightcyan; */
+    margin: 10px;
+    /* background-image: url("105810674.jpg"); */
+    /* background-repeat: no-repeat; */
+    
+    
+}
+
+#page7box1div1{
+    margin-bottom: 0px;
+    height: 15%;
+    width: 100%;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 93);
+    margin: 15px;
+    bottom: 0;
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+
+}
+#page7box1div2{
+    font-size: 30px;
+    margin-top: 0px;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    color: rgb(0, 0, 93);
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: left; */
+    margin: 15px;
+    text-align: left;
+    font-family: 'Avant Garde', 'ITC Avant Garde Gothic', 'Arial', sans-serif;
+
+    /* background-color: red; */
+    /* border: 1px solid black; */
+
+} 
+#page7box1div3{
+    height: 25%;
+    width: 100%;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+}
+
+#page7box2{
+    height: 90%;
+    width: 47%;
+    /* background-color: green; */
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#page7img{
+    border: 1px solid black;
+    border-radius: 20%;
+    height: 100%;
+    /* width: 100%; */
+    object-fit: contain;
+}
+
+#page7bt1{
+    padding: 10px 20px;
+    background-color: blue;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    color: white;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+
+#page7bt1:hover{
+    background-color: darkblue;
+}
+
+
+#page7bt2{
+    padding: 10px 20px;
+    background-color: white;
+    color: rgb(51, 51, 243);
+   border-color: blue;
+    border-radius: 5px; 
+    cursor: pointer;
+}
